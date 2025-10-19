@@ -3,10 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acha K. Excel's Profile Card</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Testable Profile Card</title>
   </head>
   <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <figure class="avatar-container">
+        <img
+          src="https://excelportfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fexcel.1a5b57d5.jpg&w=828&q=75"
+          alt="Profile picture of excel"
+          class="avatar"
+          data-testid="test-user-avatar"
+        />
+      </figure>
+
+      <div class="profile-info">
+        <header>
+          <h2 data-testid="test-user-name">Acha K. Excel</h2>
+        </header>
+
+        <p data-testid="test-user-bio">
+          Software Developer | Web Developer | Frontend Specialist A
+          professional dedicated to delivering updated, robust services in
+          information technology, from web development to graphics design and
+          social media management
+        </p>
+
+        <p>
+          <strong>Current Time (ms):</strong>
+          <span id="user-time" data-testid="test-user-time"></span>
+        </p>
+
+        <nav aria-label="Social links">
+          <ul class="social-links" data-testid="test-user-social-links">
+            <li>
+              <a
+                href="https://twitter.com/axceldesigns"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+                >Twitter</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Axcel-Designs"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+                >GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/excel-acha"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Coding</li>
+            <li>Reading</li>
+            <li>Photography</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Unclear documentation</li>
+            <li>Slow websites</li>
+            <li>Bad UX</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
     <script src="script.js"></script>
   </body>
 </html>
